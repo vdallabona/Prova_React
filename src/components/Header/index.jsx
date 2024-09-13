@@ -14,7 +14,7 @@ export default function Header(){
                 </div>
             </header>
             <nav>
-                <Link to='/APIRM'>Personagens</Link>
+                <Link to='/Personagem'>Personagens</Link>
                 <Link to='/Episodios'>Episodios</Link>
             </nav>
         </>
