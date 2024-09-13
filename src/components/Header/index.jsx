@@ -13,6 +13,10 @@ export default function Header(){
                     <img className="rotate2" src={viteLogo} alt='Logo do Vite' />
                 </div>
             </header>
+            <nav>
+                <Link to='/APIRM'>Personagens</Link>
+                <Link to='/Episodios'>Episodios</Link>
+            </nav>
         </>
     )
 }

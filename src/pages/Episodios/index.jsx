@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Card from '../../components/Card';
+import Cardepisodes from '../../components/Cardepisodes';
 import SelectPage from '../../components/SelectPage';
-import './styles.css'
 
-export default function APIRM() {
+export default function Episodios() {
     const [conteudo, setConteudo] = useState(<p>Carregando...</p>);
     const [numero, setNumero] = useState(1);
     const [totalPages, setTotalPages] = useState(0)
@@ -16,7 +15,7 @@ export default function APIRM() {
         };
 
         const response = await fetch(
-            `https://futuramaapi.com/api/characters?page=${numero}`,
+            `https://futuramaapi.com/api/episodes?page=${numero}`,
             reqOptions
         );
 
@@ -29,8 +28,8 @@ export default function APIRM() {
 
     async function listaPersonagens() {
             const { items } = await carregarTodosOsPersonagens();
-            setTotalPages(9)
-            setConteudo(items.map(personagem => <Card data={personagem} key={personagem.id} />));
+            setTotalPages(1)
+            setConteudo(items.map(episodio => <Cardepisodes data={episodio} key={episodio.id} />));
     }
 
     useEffect(() => {

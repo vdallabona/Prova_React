@@ -1,7 +1,8 @@
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import APIRM from './pages/APIRM'
+import Personagem from './pages/Personagem'
+import Episodios from './pages/Episodios'
 import { Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path='/' element={<APIRM />}/>
+        <Route path='/Personagem' element={<Personagem />}/>
+        <Route path='/Episodios' element={<Episodios />}/>
       </Routes>
 
       <Footer />
