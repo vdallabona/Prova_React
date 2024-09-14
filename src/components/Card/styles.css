@@ -1,7 +1,7 @@
 .cabecalho {
     padding: 30px 30px 20px 30px;
     color: white;
-    background-color: rgb(39, 43, 51);
+    background-color: #4CAF50;
   }
   
   h2 {
@@ -22,7 +22,7 @@
     height: fit-content;
     color: white;
     overflow: hidden;
-    background-color: rgb(60, 62, 68);
+    background-color: #4CAF50;
     border-radius: 20px;
     margin-bottom: 20px;
   }
