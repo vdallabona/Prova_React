@@ -5,7 +5,7 @@ import SelectPage from '../../components/SelectPage';
 export default function Episodios() {
     const [conteudo, setConteudo] = useState(<p>Carregando...</p>);
     const [numero, setNumero] = useState(1);
-    const [totalPages, setTotalPages] = useState(0)
+    const [totalPagesEpi, setTotalPagesEpi] = useState(1)
 
     async function carregarTodosOsPersonagens() {
 
@@ -28,7 +28,7 @@ export default function Episodios() {
 
     async function listaPersonagens() {
             const { items } = await carregarTodosOsPersonagens();
-            setTotalPages(1)
+            setTotalPagesEpi(3)
             setConteudo(items.map(episodio => <Cardepisodes data={episodio} key={episodio.id} />));
     }
 
@@ -51,7 +51,7 @@ export default function Episodios() {
         <main>
             <div className='linhaBotao'>
                 <button onClick={() => atualizarPagina('-')}>Página anterior</button>
-                    <SelectPage numero={numero} total={totalPages} mudancaPagina={pularPagina}/>
+                    <SelectPage numero={numero} total={totalPagesEpi} mudancaPagina={pularPagina}/>
                 <button onClick={() => atualizarPagina('+')}>Próxima página</button>
             </div>
             <div className='lista-principal'>
@@ -59,7 +59,7 @@ export default function Episodios() {
             </div>
             <div className='linhaBotao'>
                 <button onClick={() => atualizarPagina('-')}>Página anterior</button>
-                    <SelectPage numero={numero} total={totalPages} mudancaPagina={pularPagina}/>
+                    <SelectPage numero={numero} total={totalPagesEpi} mudancaPagina={pularPagina}/>
                 <button onClick={() => atualizarPagina('+')}>Próxima página</button>
             </div>
         </main>
