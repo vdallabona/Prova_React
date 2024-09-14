@@ -7,16 +7,14 @@ export default function Header(){
     return (
         <>
             <header>
-                <h1>Bem-vindos ao Futurama Fanverse!</h1>
+                <h1 className='sombraDissipada'>Bem-vindos ao Futurama Fanverse!</h1>
                 <div className='imagensHeader'>
-                    <img className="rotate" src={reactLogo} alt='Logo do React' />
-                    <img className="rotate2" src={viteLogo} alt='Logo do Vite' />
                 </div>
             </header>
             <nav>
-                <Link to='/'>Home</Link>
-                <Link to='/Personagem'>Personagens</Link>
-                <Link to='/Episodios'>Episodios</Link>
+                <Link to='/'><p className='itemMenu'>Home</p><img className="rotate2" src='https://purepng.com/public/uploads/large/purepng.com-futurama-shipfuturamaanimationsciencefictioncartoon-1701528603944s3pzr.png' alt='Home' /></Link>
+                <Link to='/Personagem'><p className='itemMenu'>Personagem</p><img className="rotate" src='https://cdn.awsli.com.br/600x1000/2607/2607018/produto/220651506/futurama-philip-j-fry-faef8fa1.png' alt='Personagens' /></Link>
+                <Link to='/Episodios'><p className='itemMenu'>Episodios</p><img className="rotate2" src='https://images.fineartamerica.com/images/artworkimages/medium/3/bender-futurama-robots-ulva-mardhiyah-transparent.png' alt='Episodios' /></Link>
             </nav>
         </>
     )

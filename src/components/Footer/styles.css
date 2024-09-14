@@ -4,3 +4,7 @@ footer {
     text-align: center;
     padding: 1em;
 }
+
+.sombraDissipada{
+    text-shadow: 0px 0px 4px black;
+}

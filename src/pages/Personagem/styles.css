@@ -16,12 +16,13 @@
 
 .linhaBotao button{
     border-radius: 3ch;
-    background-color: #4CAF50;
+    background-color: #001157;
 }
 
 .linhaBotao button:hover{
     padding: 20px;
-    background-color: #39863b;
+    background-color: #0021a7;
     box-shadow: 5px 5px 10px rgb(70, 70, 70);
     border: none;
 }
+
