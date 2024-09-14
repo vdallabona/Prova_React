@@ -4,11 +4,12 @@ export default function Cardepisodes({ data: episodio }){
             <h2>{episodio.name}</h2>
 
             <div className='char-info'>
-                <span><b>Numero do episósio: </b> {episodio.number} </span>
+                <span><b>Este foi o </b> {episodio.id}<b>° episódio lançado</b></span>
                 <span><b>Data de Lançamento: </b> {episodio.airDate} </span>
+                <span><b>Código de lançamento: </b>{episodio.broadcastCode}</span>
             </div>
+                <h2><b>Temporada: </b>{episodio.season.id}</h2>
 
-            <h5><b>Código de lançamento: </b>{episodio.broadcastCode}</h5>
         </div>
     )
 }
