@@ -1,0 +1,31 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    color: #BF3124;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+.highlight {
+    color: #922289;
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.quote {
+    font-family: 'Courier New', Courier, monospace;
+    color: #BF0F50;
+    font-size: 1.2em;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 4px solid #BF0F50;
+    background-color: #2d2d2d;
+}

@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Personagem from './pages/Personagem'
 import Episodios from './pages/Episodios'
 import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
 
       <Routes>
+        <Route path='/' element={<Home />}/>
         <Route path='/Personagem' element={<Personagem />}/>
         <Route path='/Episodios' element={<Episodios />}/>
       </Routes>
