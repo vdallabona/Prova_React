@@ -4,11 +4,19 @@
     padding: 20px;
 }
 h1 {
-    color: #BF3124;
+    color: white;
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
+
+.titulo{
+    color: #922289 !important; 
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
 p {
     font-size: 1.1em;
     margin-bottom: 15px;

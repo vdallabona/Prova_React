@@ -1,5 +1,5 @@
 header {
-    background-color: #4CAF50;
+    background-image: linear-gradient(to right, #001157, #098BB5, #00C3D6, #DCF7F7);
     color: white;
     padding: 1em;
     display: flex;
@@ -19,14 +19,14 @@ a {
     color: white;
     text-decoration: inherit;
     padding: 15px;
-    background-color: #4CAF50;
+    background-color: #001157;
     width: 50%;
     text-align: center;
     font-size: 1.3rem;
 }
 a:hover {
     padding: 20px;
-    background-color: #39863b;
+    background-color: #001157;
     box-shadow: 5px 5px 10px rgb(70, 70, 70);
 }
 
